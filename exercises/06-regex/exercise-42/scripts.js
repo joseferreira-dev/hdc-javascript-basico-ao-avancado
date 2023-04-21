@@ -1,8 +1,8 @@
-let validUppercase = /[A-Z]/;
+let validId = /\d+ID$/;
 
-console.log(regex.test("0123456789"));
-console.log(regex.test("abcde"));
-console.log(regex.test("ABCDE"));
-console.log(regex.test("0123abcd"));
-console.log(regex.test("0123ABCD"));
-console.log(regex.test("abcdABCD"));
+console.log(validId.test("0123"));
+console.log(validId.test("abcde"));
+console.log(validId.test("ABCDE"));
+console.log(validId.test("0123ID"));
+console.log(validId.test("0123id"));
+console.log(validId.test("ID0123"));
